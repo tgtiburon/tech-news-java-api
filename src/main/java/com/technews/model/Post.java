@@ -34,7 +34,7 @@ public class Post implements Serializable {
 
     @NotNull
     @Temporal(TemporalType.DATE)//Date type in DB
-    @Column(name="posted_at")
+    @Column(name="updated_at")
     private Date updatedAt = new Date();
     // Need to use fetchType.Lazy to resolve multiple bags exception
     @OneToMany(mappedBy = "postId", cascade = CascadeType.ALL, fetch = FetchType.LAZY  )

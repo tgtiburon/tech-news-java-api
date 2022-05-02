@@ -11,6 +11,7 @@ import java.util.Objects;
 @Table(name = "comment")
 public class Comment implements Serializable {
 
+    
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;

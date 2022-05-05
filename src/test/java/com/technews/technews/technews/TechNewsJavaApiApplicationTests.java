@@ -1,4 +1,4 @@
-package com.technews;
+package com.technews.technews.technews;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -89,7 +89,7 @@ public class Post implements Serializable {
     public Integer getUserId() {
         return userId;
     }
-    public void setUserIda(Integer userId) {
+    public void setUserId(Integer userId) {
         this.userId = userId;
     }
     public Date getPostedAt() {

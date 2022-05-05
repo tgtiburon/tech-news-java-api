@@ -14,10 +14,7 @@ import java.util.Objects;
 @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 // name of the table this class maps to
 // by default would be class name
-@Table(name="user")
-
-
-
+@Table(name= "user")
 public class User implements Serializable {
 
     // @Id says id will be unique
@@ -41,6 +38,10 @@ public class User implements Serializable {
     private List<Vote> votes;
     @OneToMany(mappedBy = "userId", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Comment> comments;
+
+    public User() {
+
+    }
 
     public User(Integer id, String username, String email, String password)  {
         this.id = id;

@@ -1,4 +1,4 @@
-package com.technews.controller;
+package com.technews.model.controller;
 
 // Import the spring controller
 import com.technews.model.Post;
